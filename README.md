@@ -5,6 +5,7 @@ quickly backup any folder on your Windows OS.
 
 ## Example Code - Backup Function
 
+```
 BackupFolder(dir,ftype:="7z",rec:=0,list:=0,compress:=9,ud:=1) {
 	Global 7z,drive,backup,temp,bfile
 	StringLower,ftype,ftype
@@ -61,6 +62,7 @@ BackupFolder(dir,ftype:="7z",rec:=0,list:=0,compress:=9,ud:=1) {
 	ControlSetText,msctls_statusbar321,% "Status: Backup completed. Your archive is located at: " backup,NPS - Folder Backup
 	Return files
 }
+```
 
 ## Motivation
 
